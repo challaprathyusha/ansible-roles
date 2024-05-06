@@ -11,7 +11,7 @@
 - name: download application code
   ansible.builtin.get_url:
     url: https://expense-builds.s3.us-east-1.amazonaws.com/expense-{{COMPONENT}}-v2.zip
-    dest: /tmp/frontend.zip
+    dest: /tmp/{{COMPONENT}}.zip
 
 - name: extract the application code 
   ansible.builtin.unarchive:
