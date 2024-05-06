@@ -9,7 +9,9 @@
     state:  started
     enabled:  yes
 
-- name: import role tasks 
+- name: import role tasks
+  tags: 
+  - deployment
   ansible.builtin.import_role:
     name: common
     tasks_from: main
