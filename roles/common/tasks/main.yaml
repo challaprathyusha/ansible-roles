@@ -15,6 +15,6 @@
 
 - name: extract the application code 
   ansible.builtin.unarchive:
-  src:  /tmp/frontend.zip
-  dest: "{{APP_LOCATION}}"
+    src:  /tmp/frontend.zip
+    dest: "{{APP_LOCATION}}"
   remote_src: yes
