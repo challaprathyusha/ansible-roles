@@ -2,6 +2,7 @@
   ansible.builtin.file:
     path: "{{APP_LOCATION}}"
     state: absent
+  ignore_errors:  yes
 
 - name: creating app directory 
   ansible.builtin.file:
