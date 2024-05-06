@@ -45,7 +45,7 @@
     executable: pip3.9
 
 - name: add database to mysql server
-  community.mysql.mysql_info:
+  community.mysql.mysql_db:
     login_user: "{{DB_USER}}"
     login_password: "{{mysql_password}}"
     login_host: "{{DB_HOST}}"
