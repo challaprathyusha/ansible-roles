@@ -1,5 +1,5 @@
 DB_HOST:  db.expensesnote.site
-#mysql_password: ExpenseApp@1
+mysql_password: ExpenseApp@1
 DB_USER:  root
 APP_LOCATION: /app
 COMPONENT:  backend
