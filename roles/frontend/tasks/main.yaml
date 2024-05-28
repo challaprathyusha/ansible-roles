@@ -15,8 +15,8 @@
   ansible.builtin.import_role:
     name: common
     tasks_from: main
-  notify: 
-    - restart nginx
+#  notify: 
+#    - restart nginx
 
 - name: copying expense config file to web server
   ansible.builtin.template:
