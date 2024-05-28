@@ -17,7 +17,7 @@
 - name: creating expense user
   ansible.builtin.user:
     name: expense
-#   state:  present
+    state:  present
 
 - name: import common code
   tags: 
