@@ -20,15 +20,15 @@
     state:  present
 
 - name: import common code
-#  tags: 
+# tags: 
 #  - deployment
   ansible.builtin.import_role:
     name: common
     tasks_from: main
 
 - name: downloading application dependencies
-#  tags: 
-# - deployment
+# tags: 
+#  - deployment
   ansible.builtin.command:  npm install
   args:
     chdir: /app
@@ -58,7 +58,7 @@
     target: /app/schema/backend.sql
 
 - name: start and enable backend service
-#  tags: 
+# tags: 
 #  - deployment
   ansible.builtin.service:
     name: backend
